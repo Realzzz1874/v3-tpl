@@ -1,17 +1,17 @@
 import { defineStore } from 'pinia'
 
-export const refreshStore = defineStore('refresh', {
+export const userStore = defineStore('user', {
   state: () => {
-    return { refreshNum: 0 }
+    return { name: 'Maria' }
   },
   getters: {
-    queryRefresh(): number {
-      return this.refreshNum
+    getUserName(): string {
+      return this.name
     }
   },
   actions: {
-    upRefresh(st: number) {
-      this.refreshNum = st
+    updateUserName(name: string) {
+      this.name = name
     }
   }
 })

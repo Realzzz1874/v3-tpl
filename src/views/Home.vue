@@ -1,24 +1,14 @@
 <script setup lang="ts">
 import HelloWorld from '../components/HelloWorld.vue'
-import { refreshStore } from '@/store/index'
-import { HomeService } from './home'
-// use store
-const refresher = refreshStore()
-console.log(refresher.refreshNum)
-
-// use axios
-const { testApiData, name } = HomeService()
-// testApiData()
-
-const retryData = () => {
-  testApiData()
-}
+import { userStore } from '@/store/index'
+// user store
+const user = userStore()
 </script>
 
 <template>
   <div>
-    <img alt="Vue logo" src="../assets/logo.png" @click="retryData" />
-    <HelloWorld :msg="name" />
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld :msg="user.name" />
   </div>
 </template>
 
