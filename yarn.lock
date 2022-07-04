@@ -1037,6 +1037,10 @@ pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
 
+pinia-plugin-persistedstate@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.npmjs.org/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-1.6.1.tgz#0faca66e2c7b8ba8c3813dbf8fb3f7743b6fa951"
+
 pinia@^2.0.14:
   version "2.0.14"
   resolved "https://registry.npmjs.org/pinia/-/pinia-2.0.14.tgz#0837898c20291ebac982bbfca95c8d3c6099925f"
