@@ -1,13 +1,14 @@
 <script setup lang="ts">
-
+import { NButton } from 'naive-ui'
 // defineProps<{ msg: string }>()
 defineProps({
-  msg: String,
+  msg: String
 })
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
+  <n-button type="primary">naive-ui</n-button>
 </template>
 
 <style scoped>
@@ -25,5 +26,8 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   color: #304455;
+}
+h1 {
+  margin: 20px auto;
 }
 </style>
