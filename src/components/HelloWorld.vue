@@ -1,13 +1,12 @@
 <script setup lang="ts">
-
 // defineProps<{ msg: string }>()
 defineProps({
-  msg: String,
+  msg: String
 })
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="btn">{{ msg }}</h1>
 </template>
 
 <style scoped>

@@ -16,6 +16,9 @@ export default defineConfig({
         charset: false,
         additionalData: '@import "./src/style/global.less";' // 加载全局样式，使用 less 特性
       }
-    }
+    },
+    postcss: {
+      plugins: [require('tailwindcss'), require('autoprefixer')],
+    },
   }
 })
